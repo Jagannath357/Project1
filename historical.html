@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+    width: 100%;
+    height: 3300px;
+}
+header{
+    width: 100%;
+    height: 195px;
+    background-color: rgb(224, 231, 236);
+    margin:0;
+}
+.main-div{
+    width:100%;
+    height:100px;
+}
+.box-top{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: relative;
+    top:30px;
+    bottom: 40px;
+    font-size: 20px;
+}
+.box-bellow{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 89px;
+    position: relative;
+    top: 55px;
+    bottom: 10px;
+    border-top:  0.5px solid gray;
+    border-bottom:  0.5px solid gray;
+    /* z-index:3; */
+}
+a{
+    text-decoration: none;
+}
+.name{
+    width:100%;
+    border-width: 0.25px;
+    position: relative;
+    top:96px;
+    bottom:0px;
+    box-shadow: 0 1px 95px 5px gray;
+}
+.header-link:hover{
+    border-bottom: solid 5px blue;
+    font-weight: 900;
+}
+#searchfield{
+    width:400px;
+    height:40px;
+    border-style: solid;
+    border:transparent;
+    border-radius: 20px;
+    position: relative;
+    bottom:7px;  
+}
+#icon{
+    font-size: 30px;
+}
+#logo{
+    position: relative;
+    bottom: 7px;
+}
+#login:hover{
+    color: red;
+}
+.image{
+    width: 500px;
+    height:300px;
+}
+.main-body{
+    height: 2600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position:relative;
+    top:50px;
+}
+.body-content{
+    width: 500px;
+    /* height: 800px; */
+    border-style: solid;
+    border:transparent;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px 1px gray;
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+#div1{
+    height:810px;
+}
+#div2{
+    height:770px;
+}
+#div3{
+    height:790px;
+}
+#div4{
+    height:860px;
+}
+#div5{
+    height:815px;
+}
+#div6{
+    height:795px;
+}
+.div-button{
+    width:130px;
+    height:50px;
+    border: transparent;
+    border-radius: 6px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+.anker-button{
+    color:white;
+}
+.para{
+    margin-left: 10px;
+}
+.box-para{
+    width:450px;
+    text-align: left;
+    color: rgb(41, 38, 38);
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+#heading2{
+    display: inline-block;
+    position:relative;
+    top: 50px;
+    left: 165px;
+    color: blue;
+    font-weight: 100;
+}
+.whole-footer{
+    width:100%;
+    height:400px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    top: 50px;
+    border-style: solod;
+    border-width: 0.5px;
+    box-shadow: 0 -2px 10px 0px gray;
+}
+.footer{
+    width:200px;
+    height: 350px;
+    border: transparent;
+    
+}
+#footer-div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#footer-div4{
+    position: relative;
+    top: 5px;
+}
+li{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+
+}
+#footer-li{
+    font-size: 18px;
+    font-weight: 200;
+}
+#footer-para1{
+    font-size: 18px;
+    font-weight: 200;
+}
+#footer-para2{
+    font-size: 14px;
+    color: blue;
+    margin-top: 5px;
+}
+#footer-para3{
+    font-size: 12px;
+}
+#footer-image{
+    width:100px;
+    height:100px;
+    position: relative;
+    top: 50px;
+
+}
+#last-para1{
+    font-size: 18px;
+}
+#last-para2{
+    font-size: 16px;
+    color: blue;
+}
+#last-para3{
+    font-size: 16px;
+}
+#last-para4{
+    font-size: 16px;
+}
+#last-para5{
+    font-size: 16px;
+}
+#icon1{
+    font-size: 35px;
+    
+    color: blue;
+}
+#icon2{
+    font-size: 35px;
+    margin-left: 10px;
+}
+#icon3{
+    font-size: 35px;
+    margin-left: 10px;
+    color: aqua;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-div">
+            <div class="main-box">
+                <div class="box-top">
+                    <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg" id="logo">
+                    <div id="small">
+                        <input type="se0arch" placeholder="Search for Places to visit" id="searchfield">
+                        <i class="fa-solid fa-magnifying-glass"  id="icon"></i>
+                    </div>
+                    <a href="#" class="header-link">Explore More</a>
+                    <a href="https://jagannath357.github.io/Login-form/" id="login" class="header-link">Login Form</a>
+                </div>
+                
+                <div class="box-bellow"><a id="a1" class="header-link" href="https://www.holidify.com/country/india/">India</a>
+                    <a id="a2" class="header-link" href="https://www.holidify.com/country/india/packages.html">Packages</a>
+                    <a id="a3" class="header-link" href="https://www.holidify.com/country/india/places-to-visit.html">Place to visit</a>
+                    <a id="a4" class="header-link" href="https://www.holidify.com/country/india/best-time-to-visit.html"> best time</a>
+                    <a id="a6" class="header-link" href="https://www.holidify.com/country/india/how-to-reach.html">How to Reach</a>
+                    <a id="a5" class="header-link" href="https://www.holidify.com/country/india/visa-requirements.html">Visa Policy</a>
+                    <a id="a7" class="header-link" href="https://www.holidify.com/country/india/getting-around.html">Getting Around</a>
+                    <a id="a8" class="header-link" href="https://www.holidify.com/country/india/photos.html">Photos</a>
+                </div>
+                <h2 id="heading2">There are list of some places given bellow:</h2>
+            </div>
+        </div>
+    </header>
+    <div class="main-body" id="whole-box">
+        <div id="div1" class="body-content">
+            <a href="https://www.holidify.com/places/agra/taj-mahal-sightseeing-1020.html"><p class="para">1.Taj Mahal, Agra</p><img src="https://www.holidify.com/images/attr_square/1020.jpg" id="img1" class="image"></a><br>
+            <p class="box-para">The Taj Mahal, located in Agra, India, is an iconic monument of eternal love, built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. This architectural marvel, with its pristine white marble, intricate carvings, and gemstone inlays, stands as a testament to the grandeur of Mughal architecture. Recognized as a UNESCO World Heritage site, it attracts millions of visitors each year from across the globe.
+            <br><br>
+            <b>Entry Fee:</b>Foreign tourists: ₹1300
+            SAARC and BIMSTEC Tourists: ₹740
+            Domestic/Indian Tourists: ₹250
+            <b>Timings:</b> 6:00 AM to 7:00 PM (Closed on Fridays)
+            <b>Best Time to Visit:</b> October to March.<br><br></p>
+            <div id="button1" class="div-button"><a href="https://www.holidify.com/places/agra/taj-mahal-sightseeing-1020.html" class="anker-button">Read more</a></div>
+        </div>
+        <div id="div2" class="body-content"v><a href="https://www.holidify.com/places/delhi/qutub-minar-and-complex-sightseeing-1727.html"><p class="para">2. Qutab Minar, Delhi</p><img src="https://www.holidify.com/images/attr_square/1727.jpg" id="img2" class="image"></a><br>
+            <p class="box-para">Qutub Minar, situated in the heart of Delhi, stands as a magnificent example of Indo-Islamic Afghan architecture. With its towering height of 73 meters, it's the tallest brick minaret in the world, featuring intricate carvings and verses from the Quran. Built in the 12th century, it is a UNESCO World Heritage site and an iconic symbol of Delhi's rich historical past.
+            <br><br>
+            <b>Entry Fee:</b>Foreign tourists: ₹500
+            Indian Tourists: ₹30
+            <b>Timings:</b> 7:00 AM to 5:00 PM
+            <b>Best Time to Visit:</b> October to March.<br><br></p>
+            <div id="button2" class="div-button"><a href="https://www.holidify.com/places/delhi/qutub-minar-and-complex-sightseeing-1727.html" class="anker-button">Read more</a></div>
+        </div>
+        <div id="div3" class="body-content"><a href="https://www.holidify.com/places/jaipur/hawa-mahal-sightseeing-2131.html"><p class="para">3. Hawa Mahal, Jaipur</p><img src="https://www.holidify.com/images/attr_square/2131.png" id="img3" class="image"></a><br>
+            <p class="box-para">Hawa Mahal, often referred to as the "Palace of Winds," is an iconic landmark in Jaipur, Rajasthan. This five-story red and pink sandstone structure boasts 953 small windows, which allowed the royal ladies to observe daily life on the street below without being seen. Built in 1799 by Maharaja Sawai Pratap Singh, its unique honeycomb design provides natural air conditioning, keeping the interior cool.
+            <br><br>
+            <b>Entry Fee:</b>Foreign tourists: ₹200
+            Indian Tourists: ₹50
+            <b>Timings:</b> 9:00 AM to 5:00 PM
+            <b>Best Time to Visit:</b> October to March.<br><br></p>
+            <div id="button3" class="div-button"><a href="https://www.holidify.com/places/jaipur/hawa-mahal-sightseeing-2131.html" class="anker-button">Read more</a></div>
+        </div>
+       <div id="div4" class="body-content"><a href="https://www.holidify.com/places/kolkata/victoria-memorial-sightseeing-2435.html"><p class="para">4. Victoria Memorial, Kolkata</p><img src="https://www.holidify.com/images/attr_square/2435.jpg" id="img4" class="image"></a><br>
+            <p class="box-para">Victoria Memorial in Kolkata stands as a magnificent reminder of India's colonial past and the grandeur of the British Empire. Commissioned in memory of Queen Victoria, this marble monument boasts beautiful gardens, galleries, and a museum, showcasing a vast collection of artifacts. An epitome of artistic and architectural brilliance, it is a must-visit landmark in the City of Joy.<br><br>
+            <b>Entry Fee:</b>Garden: ₹20 (both Indians and Foreigners)
+            Museum: ₹30 (Indians), ₹500 (Foreigners)
+            <b>Timings:Garden:</b> 5:30 AM to 6:15 PM
+            Museum: 10:00 AM to 5:00 PM (Closed on Mondays)
+            <b>Best Time to Visit:</b> November to February.<br><br></p>
+        <div id="button4" class="div-button"><a href="https://www.holidify.com/places/kolkata/victoria-memorial-sightseeing-2435.html" class="anker-button">Read more</a></div></div>
+        <div id="div5" class="body-content"><a href="https://www.holidify.com/places/delhi/india-gate-sightseeing-1718.html"><p class="para">5. India Gate, Delhi</p><img src="https://www.holidify.com/images/attr_square/1718.jpg" id="img5" class="image"></a><br>
+            <p class="box-para">India Gate, situated in the heart of New Delhi, stands as a symbol of valor and sacrifice, dedicated to the Indian soldiers who laid down their lives during World War I and the Third Anglo-Afghan War. This 42-meter tall gate, designed by Sir Edwin Lutyens, is an architectural marvel and a popular recreational area for locals and tourists alike. The flame that constantly burns under the gate, known as the Amar Jawan Jyoti, pays homage to the unknown soldiers.<br><br>
+
+            <b>Entry Fee:</b> No charge.
+            <b>Timings:</b> Open 24 hours, but     best viewed in the evening during the lighting ceremony.
+            <b>Best Time to Visit:</b> October to   March.<br><br></p>
+            <div id="button5" class="div-button"><a href="https://www.holidify.com/places/delhi/india-gate-sightseeing-1718.html" class="anker-button">Read more</a></div></div>
+        <div id="div6" class="body-content"><a href="https://www.holidify.com/places/amritsar/jallianwala-bagh-sightseeing-1177.html"><p class="para">6. Jallianawala Bagh</p><img src="https://www.holidify.com/images/attr_square/1177.jpg" id="img6" class="image"></a><br>
+            <p class="box-para">Jallianwala Bagh, located in Amritsar, Punjab, is a historic site that commemorates the tragic massacre of hundreds of innocent civilians by British forces on April 13, 1919. This poignant memorial, with its preserved bullet marks and the Martyrs’ Well, stands as a testament to the fight for India's independence. The serene garden now serves as a place of reflection and remembrance for visitors.<br><br>
+    
+            <b>Entry Fee:</b> No charge.
+            <b>Timings:</b> 6:30 AM to 7:30 PM (Summer), 7:00 AM to 6:00 PM (Winter).
+            <b>Best Time to Visit:</b> October to March<br><br></p>
+        <div id="button6" class="div-button"><a href="https://www.holidify.com/places/amritsar/jallianwala-bagh-sightseeing-1177.html" class="anker-button">Read more</a></div></div>
+       </div>
+
+    </div>
+    <footer>
+        <div class="whole-footer">
+            <div id="footer-div1" class="footer">
+                <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg" id="footer-image">
+            </div>
+            <div id="footer-div2" class="footer">
+                <ul class="footer-ul" id="ul1" type="none">
+                    <li id="footer-li">Explore Holidify</li>
+                    <li>Packages</li>
+                    <li>Hotels</li>
+                    <li>Destinations</li>
+                    <li>Collections</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div id="footer-div3" class="footer">
+                <p id="footer-para1">
+                    Travel Agent?
+                </p>
+                <p id="footer-para2">
+                    Buy Travel Leads
+                </p>
+                <p id="footer-para3">
+                    (100% phone and email verified leads for holiday package)
+                </p>
+            </div>
+            <div id="footer-div4" class="footer">
+                <p id="last-para1" class="last">
+                    Need help with tour packages?
+                </p>
+                <p id="last-para2" class="last">
+                    Fill this form to get a callback
+                </p>
+                <p id="last-para3" class="last">
+                    <i class="fa-solid fa-phone"></i>&nbsp022-48934191<br>
+
+                    <i class="fa-duotone fa-solid fa-envelope"></i>&nbsp hello@holidify.com
+                </p>
+                <p id="last-para4" class="last">Mon-Fri: 10AM - 7PM (IST)<br>
+                   Saturday: 10AM - 2PM (IST)
+                </p>   
+                <p id="last-para5" class="last">
+                    Follow us<br><br>
+                    <i class="fa-brands fa-square-facebook" id="icon1"></i><i class="fa-brands fa-square-instagram" id="icon2"></i><i class="fa-brands fa-twitter" id="icon3"></i>
+                </p>
+                <div id="icons">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
